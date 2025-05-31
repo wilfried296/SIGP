@@ -32,6 +32,11 @@ du capteur dans la broche 3 et le stocke dans une varable <<val>>*/
 Serial.println(val);/*pour afficher les donnee recu
 du capteur dans le moniteur serie */
 
+if (val<=300){
+ digitalWrite(relai_pompe,HIGH);/*pour fait sorti le courant
+dans la broche 7 afin d'activer le relai*/ 
+}else{
+
 digitalWrite(relai_pompe,HIGH);/*pour fait sorti le courant
 dans la broche 7 afin d'activer le relai*/
-}
+}}
